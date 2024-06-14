@@ -2,7 +2,7 @@
 This code in on the raspberry pi
 
 14/06/2024:
-influx , nodered are in images . \n
+influx , nodered are in images .
 to execute the full project you need to:
 activate v-env "cushion" with "conda activate cushion"
 run all the file.py in the "fsr folder"
