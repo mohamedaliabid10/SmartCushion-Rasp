@@ -103,7 +103,7 @@ try:
         client.publish(mqtt_topic, payload)
 
         # Check if the person is available or unavailable
-        if fsr_sum > 100:
+        if fsr_sum > 300:
             if not person_available:
                 print(f"Person is now available at {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
                 print(f"Unavailable duration: {format_duration(unavailable_duration)}")
