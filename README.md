@@ -11,22 +11,13 @@ These instructions will guide you through the setup process to get the project r
 - Docker
 - Conda environment manager
 
-### Installation
-
-1. **Clone the repository and navigate to the project directory:**
-
-   ```bash
-   git clone https://github.com/yourusername/smartcushion-rasp.git
-   cd smartcushion-rasp
-   ```
-
-2. **Activate the Conda environment:**
+1. **Activate the Conda environment:**
 
 ```bash
  conda activate cushion
 ```
 
-3. **Execute the Python scripts for data handling:**
+2. **Execute the Python scripts for data handling:**
 
 ```bash
 cd fsr
@@ -35,7 +26,7 @@ python sedentary.py
 python posture.py
 ```
 
-4. **Start the Flask backend server:**
+3. **Start the Flask backend server:**
 
 ```bash
 cd ../backend
