@@ -1,28 +1,43 @@
 # SmartCushion-Rasp
 
-This code is on the Raspberry Pi.
+This repository contains the codebase for the SmartCushion project implemented on a Raspberry Pi. This project uses Docker containers for InfluxDB and Node-RED, a Python Flask backend, and an Expo client for frontend interaction.
 
-**14/06/2024:**
+## Getting Started
 
-Influx and Node-RED are in images.
+These instructions will guide you through the setup process to get the project running on your Raspberry Pi for development and testing purposes.
 
-To execute the full project, you need to:
+### Prerequisites
 
-- Activate the virtual environment "cushion" with `conda activate cushion`.
-- Run all the following commands :
-  -cd /home/pi/smart_cushion/fsr
-  -cd smartcushion
-  -cd fsr
-  -python ENV_DATA.py
-  -python sedentary.py
-  -python posture.py
+- Docker
+- Conda environment manager
 
-- Run the `app.py` file in the "backend" folder in the "smartcushion" folder.
+### Installation
 
-After that, you need to run the application "cushionv3":
+1. **Clone the repository and navigate to the project directory:**
+
+   ```bash
+   git clone https://github.com/yourusername/smartcushion-rasp.git
+   cd smartcushion-rasp
+   ```
+
+2. **Activate the Conda environment:**
 
 ```bash
-cd cushionv3
-npx expo start
+ conda activate cushion
+```
 
+3. **Execute the Python scripts for data handling:**
+
+```bash
+cd fsr
+python ENV_DATA.py
+python sedentary.py
+python posture.py
+```
+
+4. **Start the Flask backend server:**
+
+```bash
+cd ../backend
+python app.py
 ```
