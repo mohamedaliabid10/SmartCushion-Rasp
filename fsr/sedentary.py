@@ -7,7 +7,7 @@ import paho.mqtt.client as mqtt
 
 
 # MQTT broker configuration
-mqtt_broker = "192.168.43.134"
+mqtt_broker = "192.168.43.79" #adress ip de rasp
 mqtt_port = 1883  # MQTT broker port
 mqtt_topic = "/home/smart_cushion/SEDENTARY"  # MQTT topic to publish DHT11 data
 

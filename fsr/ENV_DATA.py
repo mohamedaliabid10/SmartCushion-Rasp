@@ -13,7 +13,7 @@ sgp = adafruit_sgp40.SGP40(i2c)
 dhtDevice = adafruit_dht.DHT11(board.D19)
 
 # MQTT broker configuration
-mqtt_broker = "192.168.43.134"
+mqtt_broker = "192.168.43.79"  #adress ip de rasp
 mqtt_port = 1883  # MQTT broker port
 mqtt_topic = "/home/smart_cushion/Temp"  # MQTT topic to publish data
 

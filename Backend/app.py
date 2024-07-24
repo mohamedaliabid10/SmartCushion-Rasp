@@ -9,7 +9,7 @@ app = Flask(__name__)
 socketio = SocketIO(app)
 
 # InfluxDB connection details
-influxdb_url = "http://192.168.43.134:8087"
+influxdb_url = "http://192.168.43.79:8087"
 influxdb_token = "IqkNTA6RHNJC8Q3O6OJXytKil_zteUXpFKP2-bw8JZKuoiZZbvgwBTV-nq-ClafVK-fHizGHrKd7xg4gHyeAjg=="
 influxdb_org = "sofrecom"
 influxdb_bucket = "cushiondb"

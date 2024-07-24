@@ -19,7 +19,7 @@ model_path = "/home/pi/smart_cushion/models/random_forest_model.pkl"
 model = joblib.load(model_path)
 
 # MQTT broker configuration
-mqtt_broker = "192.168.43.134"
+mqtt_broker = "192.168.43.79" #adress ip de rasp
 mqtt_port = 1883  # MQTT broker port
 mqtt_topic = "/home/smart_cushion/posture"  # MQTT topic to publish posture data
 
